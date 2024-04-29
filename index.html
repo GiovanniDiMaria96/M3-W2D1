@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>w2d1 Bootstrap</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid mb-5">
+    <div class="row ">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                <path
+                  d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2" />
+                <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z" />
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z" />
+              </svg>
+              Musica
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-target="preferiti">Preferiti</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Account
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-person-circle" viewBox="0 0 16 16">
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                        Profilo</a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-pencil" viewBox="0 0 16 16">
+                          <path
+                            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                        </svg>
+                        Modifica</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-gear" viewBox="0 0 16 16">
+                          <path
+                            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                          <path
+                            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                        </svg>
+                        Impostazioni</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!- CARDS -->
+    <div class="container" id="cards">
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-3 ">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/2Y9IRtehByVkegoD7TcLfi?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Californication</h5>
+              <p class="card-text">Red Hot Chili Peppers</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">1 ora 7 minuti</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6  col-md-4 col-lg-3 ">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/5HCZg475b1R5XJvgmiAN7t?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">it.pop</h5>
+              <p class="card-text">Alex Britti</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">53 minuti 40 secondi</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/164gSCRcFEEn9mxV5hGyn8?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Wicked Game (Recorded Live at St Canice Cathedral, Kilkenny)</h5>
+              <p class="card-text">James Vincent McMorrow</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">4 minuti 31 secondi</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/4KZWx8zo5ym89aopr0dBIb?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Play</h5>
+              <p class="card-text">Moby</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">1 ora 3 minuti</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/0Dg1KwgmtUzeMQonDCUFhQ?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Immunity</h5>
+              <p class="card-text">Jon Hopkins</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">1 ora 52 minuti</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/6dVIqQ8qmQ5GBnJ9shOYGE?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">OK Computer</h5>
+              <p class="card-text">Radiohead</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">53 minuti 41 secondi</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/6deiaArbeoqp1xPEGdEKp1?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">By The Way</h5>
+              <p class="card-text">Red Hot Chili Pepper</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">1 ora 16 minuti</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/3k7bXPw2u0C0SBKPMsgMS3?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Eyes Open</h5>
+              <p class="card-text">Snow Patrol</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">45 minuti 5 secondi</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/6ZG5lRT77aJ3btmArcykra?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Parachutes</h5>
+              <p class="card-text">Coldplay</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">41 minuti 55 secondi</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/0lw68yx3MhKflWFqCsGkIs?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Black Holes and Revelations</h5>
+              <p class="card-text">Muse</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">50 minuti 12 secondi</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/2cqzFuaX52BSIPQT3w05Vm?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">An Introduction to Led Zeppelin</h5>
+              <p class="card-text">Led Zeppelin</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">49 minuti 2 secondi</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/7sXufweikTP0DcDSBGwpoD?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">...Squérez?</h5>
+              <p class="card-text">Lùnapop</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">48 minuti 15 secondi</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/6TeaIEi4NnnCJyZrpGRt7d?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Spaces</h5>
+              <p class="card-text">Nils Frahm</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">1 ora 16 minuti</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/1HjK4VLno88QIn0fLWXpy3?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">TERRITORY</h5>
+              <p class="card-text">The Blaze</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">14 minuti 20 secondi</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/0d1C87g4AQMLF3igNwqgMa?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Nightbook (Exclusive)</h5>
+              <p class="card-text">Ludovico Einaudi</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">1 ora 12 minuti</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <iframe style="border-radius:12px"
+              src="https://open.spotify.com/embed/album/0Fk4lWAADmFMmuW6jp6xyE?utm_source=generator" width="100%"
+              height="352" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Blackbird</h5>
+              <p class="card-text">Alter Bridge</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">1 ora 3 minuti</small>
+            </div>
+          </div>
+        </div>
+
+        <!- PREFERITI -->
+          <div class="bar col-12">
+            <h1 class="m-5 ">Preferiti</h1>
+            <section id="preferiti">
+              <div class="col">
+                <div class="card h-100">
+                  <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/6TeaIEi4NnnCJyZrpGRt7d?utm_source=generator" width="100%"
+                    height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Spaces</h5>
+                    <p class="card-text">Nils Frahm</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">1 ora 16 minuti</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 m-5 ">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/nils1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/nils2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/nils7.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col card">
+                <p>
+                  When it comes to defining the space between classical and electronic music, hardly any other name is
+                  mentioned as often as that of the Berlin-based pianist,
+                  composer and producer Nils Frahm. His unconventional approach to an age-old instrument, played
+                  contemplatively and intimately, and on a mesmerizing scale through his vast stage shows, has won him
+                  many fans around the world.
+                </p>
+                <p>
+                  Nils' breakthrough album Felt was released on Erased Tapes in 2011. Two years later, he returned to
+                  critical acclaim with his album Spaces, expressing his love for
+                  experimentation and answering his fan's call for a record that truly reflects what they experience
+                  during his live shows.
+                </p>
+                <p>
+                  Following the release of his album All Melody in 2018, Nils set off for another two-year-long tour,
+                  with over 180 sold out performances including New York's Brooklyn Steel,
+                  L.A.'s Disney Hall, and the Sydney Opera House. In December 2020, he released the concert film
+                  Tripping with Nils Frahm, trying to freeze a moment of this journey and capture his concerts in
+                  picture and sound.
+                </p>
+                <p>
+                  In celebration of Piano Day, Nils shared Graz in March 2021, followed by the dub-influenced
+                  seven-track album 2X1=4, and Old Friends New Friends, a collection of previously
+                  unreleased solo piano tracks.
+                </p>
+                <p>
+                  In 2022, Nils returns with an expansive new album: Unfolding at an unhurried, meditative pace in a
+                  celebration of tone, timbre, and texture - and thus of sound itself -
+                  Music For Animals offers an unusually immersive experience...
+                </p>
+              </div>
+
+
+            </section>
+          </div>
+
+      </div>
+    </div>
+
+    <!- FOOTER-->
+    <nav class="navbar bg-body-tertiary">
+      <form class="container-fluid justify-content-center ">
+          <a class="nav-link" href="#" data-target="cards">Torna su</a>
+       </form>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
